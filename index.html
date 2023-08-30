@@ -32,13 +32,15 @@
           </a>
           <ul class="nav-menu-list list">
             <li class="nav-menu-item">
-              <a href="./index.html" class="page current link">Studio</a>
+              <a href="./index.html" class="nav-menu-link current link"
+                >Studio</a
+              >
             </li>
             <li class="nav-menu-item">
-              <a href="portfolio.html" class="page link">Portfolio</a>
+              <a href="portfolio.html" class="nav-menu-link link">Portfolio</a>
             </li>
             <li class="nav-menu-item">
-              <a href="./index.html" class="page link">Contacts</a>
+              <a href="./index.html" class="nav-menu-link link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -63,7 +65,7 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="menu-icon" width="32" height="32">
+          <svg class="menu-icon" width="42" height="32">
             <use href="./images/icons.svg#icon-hamburger-open"></use>
           </svg>
         </button>
@@ -86,50 +88,50 @@
       <section class="section">
         <div class="container">
           <ul class="benefits list">
-            <li class="item">
-              <div class="icon">
+            <li class="benefits-item">
+              <div class="benefits-icon">
                 <svg class="benefits-svg-icon" width="64" height="64">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="title">Strategy</h3>
-              <p class="description">
+              <h3 class="benefits-title">Strategy</h3>
+              <p class="benefits-description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="item">
-              <div class="icon">
+            <li class="benefits-item">
+              <div class="benefits-icon">
                 <svg class="benefits-svg-icon" width="64" height="64">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="title">Punctuality</h3>
-              <p class="description">
+              <h3 class="benefits-title">Punctuality</h3>
+              <p class="benefits-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="item">
-              <div class="icon">
+            <li class="benefits-item">
+              <div class="benefits-icon">
                 <svg class="benefits-svg-icon" width="64" height="64">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="title">Diligence</h3>
-              <p class="description">
+              <h3 class="benefits-title">Diligence</h3>
+              <p class="benefits-description">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="item">
-              <div class="icon">
+            <li class="benefits-item">
+              <div class="benefits-icon">
                 <svg class="benefits-svg-icon" width="64" height="64">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="title">Technologies</h3>
-              <p class="description">
+              <h3 class="benefits-title">Technologies</h3>
+              <p class="benefits-description">
                 Design practise focused on digital experiences. We bring forth a
                 deep passion for the problem-solving.
               </p>
@@ -145,7 +147,7 @@
 
           <!--Inserting images-->
           <ul class="what-we-do list">
-            <li class="item">
+            <li class="what-we-do-item">
               <!--for Desktop-->
               <picture>
                 <source
@@ -160,9 +162,12 @@
                 />
               </picture>
             </li>
-            <li class="item">
+            <li class="what-we-do-item">
               <picture>
-                <source srcset="./images/" />
+                <source
+                  srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg"
+                  media="(min-width:1158px)"
+                />
                 <img
                   src="./images/img2.jpg"
                   alt="mobile"
@@ -171,13 +176,19 @@
                 />
               </picture>
             </li>
-            <li class="item">
-              <img
-                src="./images/img3.jpg"
-                alt="monitor and moble"
-                width="360"
-                height="300"
-              />
+            <li class="what-we-do-item">
+              <picture>
+                <source
+                  srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg"
+                  media="(min-width:1158px)"
+                />
+                <img
+                  src="./images/img3.jpg"
+                  alt="monitor and moble"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -456,7 +467,13 @@
           <h2 class="section-title">Customers</h2>
           <ul class="partners list">
             <li class="item">
-              <a class="link" href="" aria-label="Client 1">
+              <a
+                class="link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Client 1"
+              >
                 <svg class="icon" width="104px" height="56px">
                   <use href="./images/icons.svg#customer-1"></use>
                 </svg>
@@ -464,7 +481,13 @@
             </li>
 
             <li class="item">
-              <a class="link" href="" aria-label="Client 2">
+              <a
+                class="link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Client 2"
+              >
                 <svg class="icon" width="104px" height="56px">
                   <use href="./images/icons.svg#customer-2"></use>
                 </svg>
@@ -472,7 +495,13 @@
             </li>
 
             <li class="item">
-              <a class="link" href="" aria-label="Client 3">
+              <a
+                class="link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Client 3"
+              >
                 <svg class="icon" width="104px" height="56px">
                   <use href="./images/icons.svg#customer-3"></use>
                 </svg>
@@ -480,7 +509,13 @@
             </li>
 
             <li class="item">
-              <a class="link" href="" aria-label="Client 4">
+              <a
+                class="link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Client 4"
+              >
                 <svg class="icon" width="104px" height="56px">
                   <use href="./images/icons.svg#customer-4"></use>
                 </svg>
@@ -488,14 +523,26 @@
             </li>
 
             <li class="item">
-              <a class="link" href="" aria-label="Client 5">
+              <a
+                class="link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Client 5"
+              >
                 <svg class="icon" width="104px" height="56px">
                   <use href="./images/icons.svg#customer-5"></use>
                 </svg>
               </a>
             </li>
             <li class="item">
-              <a class="link" href="" aria-label="Client 6">
+              <a
+                class="link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Client 6"
+              >
                 <svg class="icon" width="104px" height="56px">
                   <use href="./images/icons.svg#customer-6"></use>
                 </svg>
@@ -619,6 +666,7 @@
           class="modal-container"
           method=""
         >
+          <!--Name-->
           <label class="modal-label">
             <span class="modal-label-text">Name</span>
             <input type="text" name="full_name" class="modal-input" required />
@@ -626,7 +674,7 @@
               <use href="./images/icons.svg#person"></use>
             </svg>
           </label>
-
+          <!--Phone-->
           <label class="modal-label">
             <span class="modal-label-text">Phone</span>
             <input
@@ -639,6 +687,7 @@
               <use href="./images/icons.svg#phone"></use>
             </svg>
           </label>
+          <!--Email-->
           <label class="modal-label">
             <span class="modal-label-text">Email</span>
             <input type="email" name="email_add" class="modal-input" required />
@@ -646,6 +695,7 @@
               <use href="./images/icons.svg#email"></use>
             </svg>
           </label>
+          <!--Comment-->
           <label class="modal-label">
             <span class="modal-label-text">Comment</span>
             <textarea
@@ -655,6 +705,7 @@
               placeholder="Text input"
             ></textarea>
           </label>
+          <!--Checkbox-->
           <label class="modal-agreement">
             <input
               class="modal-checkbox"
@@ -670,7 +721,6 @@
               <a href="#" class="form-terms">Privacy Policy</a></span
             >
           </label>
-
           <button type="submit" class="button primary button-center">
             Send
           </button>
