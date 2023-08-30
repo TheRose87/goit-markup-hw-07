@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
@@ -30,13 +30,15 @@
           </a>
           <ul class="nav-menu-list list">
             <li class="nav-menu-item">
-              <a href="./index.html" class="page current link">Studio</a>
+              <a href="./index.html" class="nav-menu-link current link"
+                >Studio</a
+              >
             </li>
             <li class="nav-menu-item">
-              <a href="portfolio.html" class="page link">Portfolio</a>
+              <a href="portfolio.html" class="nav-menu-link link">Portfolio</a>
             </li>
             <li class="nav-menu-item">
-              <a href="./index.html" class="page link">Contacts</a>
+              <a href="./index.html" class="nav-menu-link link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -61,7 +63,7 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="menu-icon" width="32" height="32">
+          <svg class="menu-icon" width="42" height="32">
             <use href="./images/icons.svg#icon-hamburger-open"></use>
           </svg>
         </button>
@@ -89,70 +91,137 @@
               <button type="button" class="button filter">Marketing</button>
             </li>
           </ul>
+        </div>
 
-          <!--Row 1-->
-          <ul class="projects list">
+        <!--Row 1-->
+        <div class="container">
+          <ul class="project-list list">
             <li class="project-card">
               <a href="#" class="project link">
                 <div class="project-cover">
-                  <img
-                  srcset="./images/p-img1-mob.jpg 1x, ./images/p-img1@2x.jpg 2x"
-                  src="./images/p-img1.jpg"
-                  alt="bank app"
-                  width="370"
-                  height="294"
-                />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      srcset="./images/p-img1.jpg 1x, ./images/p-img1@2x.jpg 2x"
+                      media="(min-width:1158px)"
+                    />
+                    <!-- TABLET -->
+                    <source
+                      srcset="
+                        ./images/p-img1-tab.jpg    1x,
+                        ./images/p-img1-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <!-- MOBILE -->
+                    <source
+                      srcset="
+                        ./images/p-img1-mob.jpg    1x,
+                        ./images/p-img1-mob@2x.jpg 2x
+                      "
+                      media="(min-width:428px)"
+                    />
+                    <img
+                      class="image"
+                      src="./images/p-img1.jpg"
+                      alt="bank app"
+                    />
+                  </picture>
                   <p class="project-card-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
+                    14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
                   </p>
-               </div>                
+                </div>
                 <div class="substrate">
                   <h3 class="name">Banking App Interface Concept</h3>
                   <p class="type">App</p>
                 </div>
               </a>
             </li>
+
             <li class="project-card">
               <a href="#" class="project link">
                 <div class="project-cover">
-                  <img
-                  srcset="./images/p-img2.jpg 1x, 
-                  ./images/p-img2@2x.jpg 2x"
-                  src="./images/p-img2.jpg"
-                  alt="mobile scanning QR code"
-                  width="370"
-                  height="294"
-              />
-                <p class="project-card-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      srcset="./images/p-img2.jpg 1x, ./images/p-img2@2x.jpg 2x"
+                      media="(min-width:1158px)"
+                    />
+                    <!-- TABLET -->
+                    <source
+                      srcset="
+                        ./images/p-img2-tab.jpg    1x,
+                        ./images/p-img2-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <!-- MOBILE -->
+                    <source
+                      srcset="
+                        ./images/p-img2-mob.jpg    1x,
+                        ./images/p-img2-mob@2x.jpg 2x
+                      "
+                      media="(min-width:428px)"
+                    />
+                    <img
+                      class="image"
+                      src="./images/p-img2.jpg"
+                      alt="bank app"
+                    />
+                  </picture>
+                  <p class="project-card-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
-                </p>
+                  </p>
                 </div>
-                
+
                 <div class="substrate">
                   <h3 class="name">Cashless Payment</h3>
                   <p class="type">Marketing</p>
                 </div>
               </a>
             </li>
+
             <li class="project-card">
               <a href="#" class="project link">
                 <div class="project-cover">
-                   <img
-                  src="./images/p-img3.jpg"
-                  alt="laptop and phone"
-                  width="370"
-                  height="294"
-                   />
-                    <p class="project-card-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      srcset="./images/p-img3.jpg 1x, ./images/p-img3@2x.jpg 2x"
+                      media="(min-width:1158px)"
+                    />
+                    <!-- TABLET -->
+                    <source
+                      srcset="
+                        ./images/p-img3-tab.jpg    1x,
+                        ./images/p-img3-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <!-- MOBILE -->
+                    <source
+                      srcset="
+                        ./images/p-img3-mob.jpg    1x,
+                        ./images/p-img3-mob@2x.jpg 2x
+                      "
+                      media="(min-width:428px)"
+                    />
+                    <img
+                      class="image"
+                      src="./images/p-img3.jpg"
+                      alt="bank app"
+                    />
+                  </picture>
+                  <p class="project-card-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
-                    </p>
-                </div>             
+                  </p>
+                </div>
                 <div class="substrate">
                   <h3 class="name">Meditation App</h3>
                   <p class="type">App</p>
@@ -163,18 +232,40 @@
             <li class="project-card">
               <a href="#" class="project link">
                 <div class="project-cover">
-                   <img
-                  src="./images/p-img4.jpg"
-                  alt="driving a car"
-                  width="370"
-                  height="294"
-                  />
-                   <p class="project-card-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      srcset="./images/p-img4.jpg 1x, ./images/p-img4@2x.jpg 2x"
+                      media="(min-width:1158px)"
+                    />
+                    <!-- TABLET -->
+                    <source
+                      srcset="
+                        ./images/p-img4-tab.jpg    1x,
+                        ./images/p-img4-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <!-- MOBILE -->
+                    <source
+                      srcset="
+                        ./images/p-img4-mob.jpg    1x,
+                        ./images/p-img4-mob@2x.jpg 2x
+                      "
+                      media="(min-width:428px)"
+                    />
+                    <img
+                      class="image"
+                      src="./images/p-img4.jpg"
+                      alt="bank app"
+                    />
+                  </picture>
+                  <p class="project-card-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
                   </p>
-                </div>             
+                </div>
                 <div class="substrate">
                   <h3 class="name">Taxi Service</h3>
                   <p class="type">Marketing</p>
@@ -184,18 +275,40 @@
             <li class="project-card">
               <a href="#" class="project link">
                 <div class="project-cover">
-                  <img
-                  src="./images/p-img5.jpg"
-                  alt="phone with illustration"
-                  width="370"
-                  height="294"
-                  />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      srcset="./images/p-img5.jpg 1x, ./images/p-img5@2x.jpg 2x"
+                      media="(min-width:1158px)"
+                    />
+                    <!-- TABLET -->
+                    <source
+                      srcset="
+                        ./images/p-img5-tab.jpg    1x,
+                        ./images/p-img5-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <!-- MOBILE -->
+                    <source
+                      srcset="
+                        ./images/p-img5-mob.jpg    1x,
+                        ./images/p-img5-mob@2x.jpg 2x
+                      "
+                      media="(min-width:428px)"
+                    />
+                    <img
+                      class="image"
+                      src="./images/p-img5.jpg"
+                      alt="bank app"
+                    />
+                  </picture>
                   <p class="project-card-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
+                    14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
                   </p>
-                </div>                
+                </div>
                 <div class="substrate">
                   <h3 class="name">Screen Illustration</h3>
                   <p class="type">Marketing</p>
@@ -205,18 +318,40 @@
             <li class="project-card">
               <a href="#" class="project link">
                 <div class="project-cover">
-                  <img
-                  src="./images/p-img6.jpg"
-                  alt="woman using phone"
-                  width="370"
-                  height="294"
-                  />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      srcset="./images/p-img6.jpg 1x, ./images/p-img6@2x.jpg 2x"
+                      media="(min-width:1158px)"
+                    />
+                    <!-- TABLET -->
+                    <source
+                      srcset="
+                        ./images/p-img6-tab.jpg    1x,
+                        ./images/p-img6-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <!-- MOBILE -->
+                    <source
+                      srcset="
+                        ./images/p-img6-mob.jpg    1x,
+                        ./images/p-img6-mob@2x.jpg 2x
+                      "
+                      media="(min-width:428px)"
+                    />
+                    <img
+                      class="image"
+                      src="./images/p-img6.jpg"
+                      alt="bank app"
+                    />
+                  </picture>
                   <p class="project-card-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
+                    14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
                   </p>
-                </div>               
+                </div>
                 <div class="substrate">
                   <h3 class="name">Online Courses</h3>
                   <p class="type">Marketing</p>
@@ -227,18 +362,40 @@
             <li class="project-card">
               <a href="#" class="project link">
                 <div class="project-cover">
-                  <img
-                  src="./images/p-img7.jpg"
-                  alt="stories concept"
-                  width="370"
-                  height="294"
-                  />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      srcset="./images/p-img7.jpg 1x, ./images/p-img7@2x.jpg 2x"
+                      media="(min-width:1158px)"
+                    />
+                    <!-- TABLET -->
+                    <source
+                      srcset="
+                        ./images/p-img7-tab.jpg    1x,
+                        ./images/p-img7-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <!-- MOBILE -->
+                    <source
+                      srcset="
+                        ./images/p-img7-mob.jpg    1x,
+                        ./images/p-img7-mob@2x.jpg 2x
+                      "
+                      media="(min-width:428px)"
+                    />
+                    <img
+                      class="image"
+                      src="./images/p-img7.jpg"
+                      alt="bank app"
+                    />
+                  </picture>
                   <p class="project-card-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
+                    14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
                   </p>
-                </div>              
+                </div>
                 <div class="substrate">
                   <h3 class="name">Instagram Stories Concept</h3>
                   <p class="type">Design</p>
@@ -248,18 +405,40 @@
             <li class="project-card">
               <a href="#" class="project link">
                 <div class="project-cover">
-                   <img
-                  src="./images/p-img8.jpg"
-                  alt="fruits and vegetables"
-                  width="370"
-                  height="294"
-                   />
-                   <p class="project-card-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      srcset="./images/p-img8.jpg 1x, ./images/p-img8@2x.jpg 2x"
+                      media="(min-width:1158px)"
+                    />
+                    <!-- TABLET -->
+                    <source
+                      srcset="
+                        ./images/p-img8-tab.jpg    1x,
+                        ./images/p-img8-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <!-- MOBILE -->
+                    <source
+                      srcset="
+                        ./images/p-img8-mob.jpg    1x,
+                        ./images/p-img8-mob@2x.jpg 2x
+                      "
+                      media="(min-width:428px)"
+                    />
+                    <img
+                      class="image"
+                      src="./images/p-img8.jpg"
+                      alt="bank app"
+                    />
+                  </picture>
+                  <p class="project-card-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
                   </p>
-                </div>              
+                </div>
                 <div class="substrate">
                   <h3 class="name">Organic Food</h3>
                   <p class="type">Web Site</p>
@@ -269,30 +448,53 @@
             <li class="project-card">
               <a href="#" class="project link">
                 <div class="project-cover">
-                  <img
-                  src="./images/p-img9.jpg"
-                  alt="coffee"
-                  width="370"
-                  height="294"
-                  />
+                  <picture>
+                    <!-- DESKTOP -->
+                    <source
+                      srcset="./images/p-img9.jpg 1x, ./images/p-img9@2x.jpg 2x"
+                      media="(min-width:1158px)"
+                    />
+                    <!-- TABLET -->
+                    <source
+                      srcset="
+                        ./images/p-img9-tab.jpg    1x,
+                        ./images/p-img9-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <!-- MOBILE -->
+                    <source
+                      srcset="
+                        ./images/p-img9-mob.jpg    1x,
+                        ./images/p-img9-mob@2x.jpg 2x
+                      "
+                      media="(min-width:428px)"
+                    />
+                    <img
+                      class="image"
+                      src="./images/p-img9.jpg"
+                      alt="bank app"
+                    />
+                  </picture>
                   <p class="project-card-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
+                    14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                     App · Cloud Storage App
-                 </p>                 
+                  </p>
                 </div>
-                                          
-                <div class="substrate">
-                <h3 class="name">Fresh Coffee</h3>
-                <p class="type">Web Site</p>
-              </div>
-          </li>
-        </ul>       
-      </div>
-    </section>
-  </main>
 
- <!--This is the Footer-->
+                <div class="substrate">
+                  <h3 class="name">Fresh Coffee</h3>
+                  <p class="type">Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--This is the Footer-->
     <footer class="page-footer">
       <div class="container">
         <!-- Main Footer -->
@@ -388,98 +590,192 @@
       </div>
     </footer>
 
-    <!-- Hamburger Close icon and Navigation-->
+    <!--Modal-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+        <p class="modal-header">
+          Leave your contacts and we will call you back
+        </p>
+        <form
+          name="signup_form"
+          autocomplete="on"
+          class="modal-container"
+          method=""
+        >
+          <!--Name-->
+          <label class="modal-label">
+            <span class="modal-label-text">Name</span>
+            <input type="text" name="full_name" class="modal-input" required />
+            <svg class="modal-input-icon" width="18" height="18">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
+          </label>
+          <!--Phone-->
+          <label class="modal-label">
+            <span class="modal-label-text">Phone</span>
+            <input
+              type="tel"
+              name="phone_number"
+              class="modal-input"
+              required
+            />
+            <svg class="modal-input-icon" width="18" height="24">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+          </label>
+          <!--Email-->
+          <label class="modal-label">
+            <span class="modal-label-text">Email</span>
+            <input type="email" name="email_add" class="modal-input" required />
+            <svg class="modal-input-icon" width="18" height="24">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+          </label>
+          <!--Comment-->
+          <label class="modal-label">
+            <span class="modal-label-text">Comment</span>
+            <textarea
+              name="comment"
+              rows="8"
+              class="modal-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <!--Checkbox-->
+          <label class="modal-agreement">
+            <input
+              class="modal-checkbox"
+              type="checkbox"
+              name="agreement"
+              checked
+            />
+            <svg class="modal-checkbox-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+            <span class="agree-text"
+              >I accept the terms and conditions of the
+              <a href="#" class="form-terms">Privacy Policy</a></span
+            >
+          </label>
+          <button type="submit" class="button primary button-center">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Hamburger Menu Close Icon and Navigations-->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <!-- Hamburger Menu Close Icon-->
-      <button class="menu-toggle js-close-menu">
-        <svg width="32" height="32">
-          <use href="./images/icons.svg#icon-hamburger-close"></use>
-        </svg>
-      </button>
+      <div class="mob-container">
+        <div>
+          <button class="menu-toggle js-close-menu">
+            <svg class="menu-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-hamburger-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mob-menu-container">
+          <!-- Mobile Navigation -->
+          <ul class="mob-nav-menu-list list">
+            <li class="mob-nav-menu-item">
+              <a href="./index.html" class="mob-nav-menu-link link current"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-nav-menu-item">
+              <a href="./portfolio.html" class="mob-nav-menu-link link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-nav-menu-item">
+              <a href="#" class="mob-nav-menu-link link">Contacts</a>
+            </li>
+          </ul>
+          <div class="mob-contacts-container">
+            <!-- Mobile Contacts Address -->
+            <ul class="mob-contacts-menu-list list">
+              <li class="mob-contacts-menu-item">
+                <a
+                  href="tel:+110001111111"
+                  class="mob-contacts-menu-phone-link link"
+                  >+11(000)111-11-11</a
+                >
+              </li>
+              <li class="mob-contacts-menu-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-contacts-menu-email-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
 
-      <!-- Mobile Navigation -->
-      <ul class="mob-menu-list list">
-        <li class="mob-menu-item">
-          <a class="mob-menu-link current link" href="./index.html">Studio</a>
-        </li>
-        <li class="mob-menu-item">
-          <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
-        </li>
-        <li class="mob-menu-item">
-          <a class="mob-menu-link link" href="./index.html">Contacts</a>
-        </li>
-      </ul>
-
-      <!-- Mobile Contacts -->
-      <div>
-        <li class="mob-item">
-          <a href="tel:+110001111111" class="mob-item-contact current link"
-            >+11 (000) 111-11-11</a
-          >
-        </li>
-        <li class="mob-item">
-          <a href="mailto:info@devstudio.com" class="mob-item-contact link"
-            >info@devstudio.com</a
-          >
-        </li>
+            <!-- Mobile Socials -->
+            <ul class="mob-social-icon-list list">
+              <li class="mob-social-icon-item">
+                <a
+                  class="mob-social-icon-link link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="link to Instagram"
+                >
+                  <svg class="mob-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-icon-item">
+                <a
+                  class="mob-social-icon-link link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="link to Twitter"
+                  ><svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-icon-item">
+                <a
+                  class="mob-social-icon-link link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="link to Facebook"
+                  ><svg class="mob-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-icon-item">
+                <a
+                  class="mob-social-icon-link link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="link to Linkedin"
+                >
+                  <svg class="mob-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-
-      <!-- Mobile Social links-->
-      <ul class="mob-social-list list">
-        <li class="icon-item">
-          <a
-            class="link"
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener nereferrer"
-            aria-label="Link to Instagram"
-          >
-            <svg class="team-social-svg" width="16" height="16">
-              <use href="./images/icons.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="icon-item">
-          <a
-            class="link"
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener nereferrer"
-            aria-label="Link to Instagram"
-          >
-            <svg class="team-social-svg" width="16" height="16">
-              <use href="./images/icons.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="icon-item">
-          <a
-            class="link"
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener nereferrer"
-            aria-label="Link to Instagram"
-          >
-            <svg class="team-social-svg" width="16" height="16">
-              <use href="./images/icons.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="icon-item">
-          <a
-            class="link"
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener nereferrer"
-            aria-label="Link to Instagram"
-          >
-            <svg class="team-social-svg" width="16" height="16">
-              <use href="./images/icons.svg#linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
     </div>
+
+    <!--Modal script-->
+    <script src="./js/modal.js"></script>
 
     <!--Hamburger script-->
     <script defer src="./js/mobile-menu.js"></script>
